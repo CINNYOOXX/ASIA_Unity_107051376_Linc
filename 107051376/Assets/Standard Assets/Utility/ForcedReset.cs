@@ -3,7 +3,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityStandardAssets.CrossPlatformInput;
 
-[RequireComponent(typeof (GUITexture))]
+#pragma warning disable CS0618 // 類型或成員已經過時
+[RequireComponent(typeof(GUITexture))]
+#pragma warning restore CS0618 // 類型或成員已經過時
 public class ForcedReset : MonoBehaviour
 {
     private void Update()

@@ -4,7 +4,7 @@ using UnityStandardAssets.CrossPlatformInput;
 
 namespace UnityStandardAssets.Characters.ThirdPerson
 {
-    [RequireComponent(typeof (ThirdPersonCharacter))]
+    [RequireComponent(typeof(ThirdPersonCharacter))]
     public class ThirdPersonUserControl : MonoBehaviour
     {
         private ThirdPersonCharacter m_Character; // A reference to the ThirdPersonCharacter on the object
@@ -14,8 +14,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private bool m_Jump;                      // the world-relative desired move direction, calculated from the camForward and user input.
         public bool at;
         public Animator ani;
+        private Rigidbody Rigcatch;
 
-        
+
         private void Start()
         {
             // get the transform of the main camera
@@ -37,7 +38,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
         private void Update()
         {
-            at=Input.GetKeyDown(KeyCode.Mouse0);
+            at = Input.GetKeyDown(KeyCode.Mouse0);
             ani.SetBool("at", at);
 
 
@@ -47,6 +48,22 @@ namespace UnityStandardAssets.Characters.ThirdPerson
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
             }
         }
+
+        private void OnTriggerStay(Collider other)
+        {
+            print(other.name);
+            if (other.name == " doughnut" && ani.GetCurrentAnimatorStateInfo(0).IsName("CCCC"))
+            {
+                Physics.IgnoreCollision(other, GetComponent<Collider>());
+                other.GetComponent<HingeJoint>().connectedBody = Rigcatch;
+            }
+            if (other.name == "area" && ani.GetCurrentAnimatorStateInfo(0).IsName("CCCC"))
+            {
+                GameObject.Find(" doughnut").GetComponent<HingeJoint>().connectedBody = null;
+            }
+
+        }
+
 
 
         // Fixed update is called in sync with physics
@@ -62,16 +79,16 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             {
                 // calculate camera relative direction to move:
                 m_CamForward = Vector3.Scale(m_Cam.forward, new Vector3(1, 0, 1)).normalized;
-                m_Move = v*m_CamForward + h*m_Cam.right;
+                m_Move = v * m_CamForward + h * m_Cam.right;
             }
             else
             {
                 // we use world-relative directions in the case of no main camera
-                m_Move = v*Vector3.forward + h*Vector3.right;
+                m_Move = v * Vector3.forward + h * Vector3.right;
             }
 #if !MOBILE_INPUT
-			// walk speed multiplier
-	        if (Input.GetKey(KeyCode.LeftShift)) m_Move *= 0.5f;
+            // walk speed multiplier
+            if (Input.GetKey(KeyCode.LeftShift)) m_Move *= 0.5f;
 #endif
 
             // pass all parameters to the character control script
