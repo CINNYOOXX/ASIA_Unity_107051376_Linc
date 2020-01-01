@@ -1,35 +1,23 @@
 ﻿<Properties StartupConfiguration="{C492B062-D43F-4B4F-6E3C-311ABBE25735}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonUserControl.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonCharacter.cs">
     <Files>
-      <File FileName="Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonCharacter.cs" Line="20" Column="3" />
-      <File FileName="Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonUserControl.cs" Line="41" Column="35" />
-      <File FileName="Assets/RPG Character Animation Pack FREE/Code/IKHandsFREE.cs" />
-      <File FileName="Assets/RPG Character Animation Pack FREE/Code/RPGCharacterMovementControllerFREE.cs" />
-      <File FileName="Assets/Standard Assets/CrossPlatformInput/Scripts/TouchPad.cs" />
-      <File FileName="Assets/Meshtint Free Santa Claus/www.meshtint.com.txt" Line="1" Column="1" />
+      <File FileName="Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonCharacter.cs" Line="18" Column="35" />
+      <File FileName="Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonUserControl.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="107051376" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Meshtint Free Santa Claus" expanded="True" />
-              <Node name="RPG Character Animation Pack FREE" expanded="True">
-                <Node name="Code" expanded="True" />
-              </Node>
               <Node name="Standard Assets" expanded="True">
                 <Node name="Characters" expanded="True">
                   <Node name="ThirdPersonCharacter" expanded="True">
                     <Node name="Scripts" expanded="True">
-                      <Node name="ThirdPersonUserControl.cs" selected="True" />
+                      <Node name="ThirdPersonCharacter.cs" selected="True" />
                     </Node>
                   </Node>
                 </Node>
-                <Node name="CrossPlatformInput" expanded="True">
-                  <Node name="Scripts" expanded="True" />
-                </Node>
               </Node>
-              <Node name="場景" expanded="True" />
             </Node>
           </Node>
         </State>

@@ -40,8 +40,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             at=Input.GetKeyDown(KeyCode.Mouse0);
             ani.SetBool("at", at);
 
-         
-          
+
+
             if (!m_Jump)
             {
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
