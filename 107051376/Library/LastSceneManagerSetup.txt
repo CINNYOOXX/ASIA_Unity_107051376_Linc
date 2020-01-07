@@ -1,5 +1,5 @@
 sceneSetups:
-- path: "Assets/\u5834\u666F/SSS.unity"
+- path: Assets/Meshtint Free Santa Claus/Scenes/Demo 01.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
