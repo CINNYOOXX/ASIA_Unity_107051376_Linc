@@ -8,7 +8,7 @@ public class MENU : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("speace");//載入遊戲場景
+        SceneManager.LoadScene("SSS");//載入遊戲場景
     }
     public void How()
     {

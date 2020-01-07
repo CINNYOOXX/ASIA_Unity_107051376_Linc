@@ -41,8 +41,6 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             at = Input.GetKeyDown(KeyCode.Mouse0);
             ani.SetBool("at", at);
 
-
-
             if (!m_Jump)
             {
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
@@ -51,16 +49,16 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
         private void OnTriggerStay(Collider other)
         {
-            print(other.name);
-            if (other.name == " doughnut" && ani.GetCurrentAnimatorStateInfo(0).IsName("CCCC"))
+            //print(other.name);
+
+            if (other.name == "doughnut" )
             {
-                Physics.IgnoreCollision(other, GetComponent<Collider>());
+                print(other.name);
+
                 other.GetComponent<HingeJoint>().connectedBody = Rigcatch;
             }
-            if (other.name == "area" && ani.GetCurrentAnimatorStateInfo(0).IsName("CCCC"))
-            {
-                GameObject.Find(" doughnut").GetComponent<HingeJoint>().connectedBody = null;
-            }
+            
+            
 
         }
 

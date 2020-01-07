@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/\u5834\u666F/howtoplay.unity"
     guid: 7dd387dab46944a2abcbff724f77db9d
+  - enabled: 1
+    path: "Assets/\u5834\u666F/SSS.unity"
+    guid: 033e08cc7ce45a1429fb22e9cef57c6f
   m_configObjects: {}
