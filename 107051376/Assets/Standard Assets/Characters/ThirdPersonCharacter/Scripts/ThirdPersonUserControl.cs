@@ -14,7 +14,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private bool m_Jump;                      // the world-relative desired move direction, calculated from the camForward and user input.
         public bool at;
         public Animator ani;
-        private Rigidbody Rigcatch;
+        public Rigidbody Rigcatch;
 
 
         private void Start()
@@ -47,24 +47,26 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             }
         }
 
+
+
         private void OnTriggerStay(Collider other)
         {
-            //print(other.name);
+            print(other.name);
 
-            if (other.name == "doughnut" )
+            if (other.name == "doughnut")
             {
-                print(other.name);
+                print("v");
 
-                other.GetComponent<HingeJoint>().connectedBody = Rigcatch;
+                
+                if (ani.GetCurrentAnimatorStateInfo(0).IsName("at"))
+                {
+                    other.GetComponent<HingeJoint>().connectedBody = Rigcatch;
+                }
+                
+
             }
-            
-            
-
         }
 
-
-
-        // Fixed update is called in sync with physics
         private void FixedUpdate()
         {
             // read inputs
@@ -92,6 +94,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             // pass all parameters to the character control script
             m_Character.Move(m_Move, crouch, m_Jump);
             m_Jump = false;
+
         }
     }
 }
+    
