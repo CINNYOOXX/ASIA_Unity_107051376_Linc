@@ -4,12 +4,6 @@ ScriptsOnlyBuild:
     - UnityStandardAssets.Characters.ThirdPerson.ThirdPersonCharacter
     - UnityStandardAssets.Characters.ThirdPerson.ThirdPersonUserControl
     - ser
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     UnityEngine.UI.dll:
@@ -74,8 +68,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 10836}
     - Class: 114
       Script: {instanceID: 11412}
-    - Class: 114
-      Script: {instanceID: 17332}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -1210,4 +1202,4 @@ ScriptsOnlyBuild:
   platform: 20
   scenePathNames:
   - "Assets/\u5834\u666F/SSS.unity"
-  playerPath: /Users/yongxin341/Desktop/GitHub/22222/1aed1c8b-59fb-43cf-baf6-e8a78827d270.pdf
+  playerPath: /Users/yongxin341/Desktop/GitHub/ASIA_Unity_107051376_Linc/Web/Web.pdf
