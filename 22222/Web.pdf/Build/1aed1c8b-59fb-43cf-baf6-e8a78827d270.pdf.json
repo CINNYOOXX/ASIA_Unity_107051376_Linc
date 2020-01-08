@@ -1,0 +1,16 @@
+{
+"companyName": "Linc",
+"productName": "107051376",
+"productVersion": "0.1",
+"dataUrl": "1aed1c8b-59fb-43cf-baf6-e8a78827d270.pdf.data.unityweb",
+"wasmCodeUrl": "1aed1c8b-59fb-43cf-baf6-e8a78827d270.pdf.wasm.code.unityweb",
+"wasmFrameworkUrl": "1aed1c8b-59fb-43cf-baf6-e8a78827d270.pdf.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.2.13f1"
+}
