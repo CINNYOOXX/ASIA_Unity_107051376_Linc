@@ -6,15 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: "Assets/\u5834\u666F/speace.unity"
-    guid: 30f15a222801f462e9176fbc56381b9b
-  - enabled: 1
-    path: "Assets/\u5834\u666F/\u958B\u59CB.unity"
-    guid: 0a3341fadf34b4d44b55b03eb58ee489
-  - enabled: 1
-    path: "Assets/\u5834\u666F/howtoplay.unity"
-    guid: 7dd387dab46944a2abcbff724f77db9d
-  - enabled: 1
     path: "Assets/\u5834\u666F/SSS.unity"
     guid: 033e08cc7ce45a1429fb22e9cef57c6f
   m_configObjects: {}
