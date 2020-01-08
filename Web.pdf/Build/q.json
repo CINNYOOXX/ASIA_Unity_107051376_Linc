@@ -1,0 +1,16 @@
+{
+"companyName": "Linc1",
+"productName": "107051376",
+"productVersion": "0.1",
+"dataUrl": "q.data.unityweb",
+"wasmCodeUrl": "q.wasm.code.unityweb",
+"wasmFrameworkUrl": "q.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.2.13f1"
+}

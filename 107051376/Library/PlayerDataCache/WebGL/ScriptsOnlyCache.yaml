@@ -6,6 +6,7 @@ ScriptsOnlyBuild:
     - ser
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
@@ -1202,4 +1203,4 @@ ScriptsOnlyBuild:
   platform: 20
   scenePathNames:
   - "Assets/\u5834\u666F/SSS.unity"
-  playerPath: /Users/yongxin341/Desktop/GitHub/ASIA_Unity_107051376_Linc/Web/Web.pdf
+  playerPath: /Users/yongxin341/Desktop/GitHub/ASIA_Unity_107051376_Linc/Web.pdf/1/q
